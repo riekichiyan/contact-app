@@ -90,12 +90,6 @@
                 class="textarea {{ $errors->has('detail') ? 'is-invalid' : '' }}"
                 name="detail"
                 rows="5">{{ old('detail', $draft['detail'] ?? '') }}</textarea>
-
-            @error('detail')
-            <div style="color:red; font-size:0.9em; margin-top:5px;">
-                {{ $message }}
-            </div>
-            @enderror
             
         </div>
         <div style="margin-top:18px;">

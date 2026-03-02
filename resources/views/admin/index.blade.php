@@ -82,7 +82,7 @@
     </table>
 </div>
 
-{{-- ✅ モーダル --}}
+{{--  モーダル --}}
 <div id="detailModal" class="modal-backdrop" style="display:none;">
     <div class="modal-panel">
         <button id="modalClose" type="button" class="modal-close">×</button>
@@ -96,4 +96,8 @@
         </form>
     </div>
 </div>
+<form method="POST" action="{{ route('logout') }}" class="logout-fixed">
+    @csrf
+    <button type="submit">ログアウト</button>
+</form>
 @endsection
